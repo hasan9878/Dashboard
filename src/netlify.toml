@@ -1,12 +1,13 @@
 [build]
-  # Rust install করে তারপর bun দিয়ে build
-[build]
   command = "bun install && bun run build"
   publish = "dist"
 
-
 [build.environment]
   BUN_VERSION = "1.1.30"
+  NODE_OPTIONS = "--dns-result-order=ipv4first"
   RUSTUP_HOME = "/opt/buildhome/.rustup"
   CARGO_HOME = "/opt/buildhome/.cargo"
   PATH = "/opt/buildhome/.cargo/bin:$PATH"
+
+[functions]
+  node_bundler = "esbuild"
