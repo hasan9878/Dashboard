@@ -1,6 +1,10 @@
 [build]
-  command = "bun install && bun run build"
+  # Rust install করে তারপর bun দিয়ে build
+  command = "curl https://sh.rustup.rs -sSf | sh -s -- -y && bun install && bun run build"
   publish = "dist"
 
 [build.environment]
   BUN_VERSION = "1.1.30"
+  RUSTUP_HOME = "/opt/buildhome/.rustup"
+  CARGO_HOME = "/opt/buildhome/.cargo"
+  PATH = "/opt/buildhome/.cargo/bin:$PATH"
