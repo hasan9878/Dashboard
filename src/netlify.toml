@@ -1,7 +1,9 @@
 [build]
   # Rust install করে তারপর bun দিয়ে build
-  command = "curl https://sh.rustup.rs -sSf | sh -s -- -y && bun install && bun run build"
+[build]
+  command = "bun install && bun run build"
   publish = "dist"
+
 
 [build.environment]
   BUN_VERSION = "1.1.30"
