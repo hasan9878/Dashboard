@@ -4,5 +4,3 @@
 
 [build.environment]
   BUN_VERSION = "1.1.30"
-  # Optional: force system install to download binaries properly
-  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1"
