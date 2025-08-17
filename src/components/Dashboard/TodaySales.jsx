@@ -38,7 +38,7 @@ const TodaySales = () => {
   ];
 
   return (
-    <div className="bg-[#21222D] p-4 md:py-12 rounded-xl shadow">
+    <div className="bg-[#21222D] p-4 md:py-13 rounded-xl shadow">
       <h2 className="text-xl font-semibold mb-1">Today's Sales</h2>
       <p className="text-[#A0A0A0] font-semibold text-[15px] mb-4">Sales Summary</p>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-left">
